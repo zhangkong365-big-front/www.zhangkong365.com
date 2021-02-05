@@ -12,20 +12,6 @@ pipeline {
     }
 
     stages {
-        stage('Image Tag') {
-            steps {
-                timeout(activity: true, time: 10, unit: 'SECONDS') {
-                    input message: '本次构建的ImageTag', parameters: [string(defaultValue: '$BUILD_NUMBER', description: '如果是部署到生产环境，应该填入上次成功构建的号码', name: 'ImageTag', trim: true)]
-                }
-
-                post {
-                    always {
-                        sh "echo ImageTag = ${ImageTag}"
-                    }
-                }
-            }
-        }
-
         stage('Git Checkout Master') {
             steps {
                 checkout([
