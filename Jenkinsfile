@@ -7,24 +7,11 @@ pipeline {
         registryCredential = '56682d69-4f4c-4146-a099-249933db6c2d'
         kubeCredential = '09ef6a86-7078-4b6e-b403-456ef419e30c'
         dockerImage = ''
-        repoUrl = 'https://github.com/zhangkong365-big-front/jarvis-official-website.git'
+        repoUrl = 'https://github.com/zhangkong365-big-front/www.zhangkong365.com.git'
         ImageTag = "${BUILD_NUMBER}"
     }
 
     stages {
-        stage('Git Checkout Master') {
-            steps {
-                checkout([
-                    $class: 'GitSCM', 
-                    branches: [[name: '*/master']], 
-                    doGenerateSubmoduleConfigurations: false, 
-                    extensions: [], 
-                    submoduleCfg: [], 
-                    userRemoteConfigs: [[credentialsId: 'github', url: repoUrl]]
-                ])
-            }
-        }
-
         stage('Build & Create Image') {
             steps{
                 script {    
