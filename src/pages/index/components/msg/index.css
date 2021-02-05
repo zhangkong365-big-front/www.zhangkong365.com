@@ -1,0 +1,41 @@
+.msgContainer {
+  visibility: hidden;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msgIcon {
+  width: 58px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.msgText {
+  margin-top: 14px;
+  font-size: var(--font-size-big-default);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+@media screen and (max-width: 992px) {
+  .msgContainer {
+    margin-top: 0;
+  }
+
+  .msgIcon {
+    width: 36px;
+    height: 31px;
+  }
+
+  .msgText {
+    margin-top: 8px;
+    font-size: var(--font-size-mobile-big);
+    width: 288px;
+  }
+}

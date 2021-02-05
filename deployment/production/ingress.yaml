@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: www.zhangkong365.com
+  namespace: production
+spec:
+  rules:
+    - host: www.zhangkong365.com
+      http:
+        paths:
+          - backend:
+              serviceName: www-zhangkong365-com-svc
+              servicePort: 80
+            path: /

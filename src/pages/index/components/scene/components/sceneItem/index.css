@@ -1,0 +1,52 @@
+.sceneItemContainer {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(78, 123, 181, 0.1);
+  background-color: var(--white);
+}
+
+.sceneItemImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 253px;
+}
+
+.sceneItemDescriptionContainer {
+  flex: 1;
+  padding: 30px 20px 0 212px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sceneItemDescriptionTitle {
+  font-size: var(--font-size-big-small);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+@media screen and (max-width: 992px) {
+  .sceneItemContainer {
+    min-height: 156px;
+  }
+
+  .sceneItemImg {
+    width: 108px;
+    height: 132px;
+  }
+
+  .sceneItemDescriptionContainer {
+    padding: 17px 5px 0 120px;
+  }
+
+  .sceneItemDescriptionTitle {
+    font-size: var(--font-size-mobile-large);
+  }
+}

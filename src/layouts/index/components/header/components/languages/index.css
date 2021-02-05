@@ -1,0 +1,11 @@
+.headerLanguagesContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+}
+
+@media screen and (max-width: 992px) {
+  .headerLanguagesContainer {
+    margin-right: 20px;
+  }
+}

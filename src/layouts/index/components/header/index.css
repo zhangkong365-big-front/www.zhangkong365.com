@@ -1,0 +1,36 @@
+.headerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: var(--headerHeight);
+  box-shadow: 0 1px 15px 0 rgba(234, 241, 244, 0.8);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerWrapper {
+  width: var(--containerWidth);
+  display: flex;
+}
+
+.headerRightContainer {
+  display: flex;
+}
+
+.headerRightSmallContainer {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .headerRightContainer {
+    display: none;
+  }
+
+  .headerRightSmallContainer {
+    display: flex;
+  }
+}

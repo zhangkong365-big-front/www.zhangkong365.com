@@ -1,0 +1,38 @@
+.successContainer {
+  text-align: center;
+  background: #EBF0F5;
+  height: 100%;
+}
+
+.cardH1 {
+  color: #88B04B;
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.cardP {
+  color: #404F5E;
+  font-size:20px;
+}
+
+.card {
+  background: white;
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: inline-block;
+  margin: 60px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width:90%;
+    padding: 30px 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+
+}

@@ -1,0 +1,38 @@
+html, body, #root {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Source Han Sans SC', 'Microsoft YaHei';
+}
+
+:root {
+  --headerHeight: 60px;
+  --containerWidth: 992px;
+  --white: #ffffff;
+  --dark-sky-blue: #34a1db;
+  --brownish-grey: #666;
+  --black: #333;
+  --carolina-blue: #8ac7fe;
+  --brown-grey: 999999;
+  --very-light-pink-three: #cccccc;
+  --font-size-default: 14px;
+  --font-size-large: 16px;
+  --font-size-large-default: 20px;
+  --font-size-large-large: 30px;
+  --font-size-big-small: 24px;
+  --font-size-big-default: 36px;
+  --font-size-big-large: 42px;
+  --font-size-mobile-default: 14px;
+  --font-size-mobile-default-large: 20px;
+  --font-size-mobile-large: 16px;
+  --font-size-mobile-small: 11px;
+  --font-size-mobile-small-large: 13px;
+  --font-size-mobile-big: 24px;
+  --font-size-mobile-big-large: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --containerWidth: calc(100% - 60px);
+  }
+}

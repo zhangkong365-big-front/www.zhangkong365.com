@@ -1,0 +1,97 @@
+.serviceCardItemContainer {
+  width: 20%;
+  min-height: 300px;
+  box-shadow: 0 0 10px 0 rgba(78, 123, 181, 0.1);
+  background-color: var(--white);
+  margin: 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.serviceItemImg {
+  width: 60px;
+  height: 60px;
+}
+
+.serviceCardItemTextWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceCardItemLargeText {
+  font-size: var(--font-size-large);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+}
+
+.serviceCardItemTextContainer {
+  margin-top: 19px;
+}
+
+.serviceCardItemText{
+  margin-bottom: 10px;
+  font-size: var(--font-size-default);
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--brownish-grey);
+}
+
+.serviceSmallCardItemTextContainer {
+  display: none;
+  margin-top: 4px;
+}
+
+.serviceSmallCardItemText {
+  margin-bottom: 0;
+  font-size: var(--font-size-mobile-default);
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+@media screen and (max-width: 992px) {
+  .serviceCardItemContainer {
+    flex-direction: row;
+    justify-content: center;
+    width: 315px;
+    height: 170px;
+    min-height: auto;
+    margin: 5px 0;
+    padding-top: 0;
+  }
+
+  .serviceCardItemTextWrapper {
+    margin-left: 20px;
+    width: 150px;
+  }
+
+  .serviceCardItemLargeText {
+    font-size: var(--font-size-mobile-large);
+  }
+
+  .serviceCardItemTextContainer {
+    display: none;
+  }
+
+  .serviceSmallCardItemTextContainer {
+    display: block;
+  }
+
+  .serviceCardItemLargeText {
+    text-align: start;
+  }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <% if (context.title != null) { %>
+        <title><%= context.title %></title>
+    <% } %>
+    <link rel="shortcut icon" href="<%= context.publicPath %>favicon.png">
+    <link rel="stylesheet" href="<%= context.publicPath %>animate.min.css">
+    <script src="<%= context.publicPath %>wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <div id="<%= context.config.mountElementId %>"></div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157965146-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157965146-1');
+    </script>
+</body>
+</html>

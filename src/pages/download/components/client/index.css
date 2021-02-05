@@ -1,0 +1,280 @@
+.clientContainer {
+  padding-top: calc(var(--headerHeight));
+}
+
+.jarvisConnector {
+  background: linear-gradient(to left, #fafcfd, #f2f7fa);
+  background-image: url('../../assets/background.png');
+  background-size: 100%;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionApp {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.jarvisConnectorIntro {
+  margin-top: 36px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.jarvisConnectorIntroItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.imgWrapper {
+  width: 100px;
+  line-height: 90px;
+  margin-bottom: 32px;
+}
+
+.stepImg {
+  max-width: 100%;
+}
+
+.stepTitle {
+  color: #2b95ff;
+  max-width: 120px;
+}
+
+.arrowWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+
+.arrowImg {
+  width: 25px;
+  height: 25px;
+}
+
+.jarvisConnectorDownload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.downloadItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downloadItemAction {
+  width: 320px;
+  height: 60px !important;
+}
+
+.jarvisConnectorEnv {
+  margin-top: 25px;
+}
+
+.downloadItem:not(:last-child) {
+  margin-right: 60px;
+}
+
+.clientWrapper {
+  width: var(--containerWidth);
+}
+
+.clientTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 29px;
+}
+
+.clientTitle {
+  font-size: var(--font-size-big-large);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.clientSubTitle, .clientConnectorSubTitle {
+  padding-top: 16px;
+  font-size: var(--font-size-large);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+  font-weight: normal;
+  max-width: 580px;
+  text-align: center;
+}
+
+.clientCategoryContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.clientCategoryTitle {
+  font-size: var(--font-size-large-large);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.clientCategoryItemContainer {
+  margin-top: 18px;
+  margin-bottom: 54px;
+  display: flex;
+}
+
+.clientCategoryItemCard {
+  width: 270px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(78, 123, 181, 0.2);
+  background-color: var(--white);
+  margin-right: 60px;
+  margin-bottom: 0;
+}
+
+.clientCategoryItemCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.clientCategoryItemTitle {
+  font-size: var(--font-size-big-small);
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.clientCategoryItemWrapper {
+  padding-top: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clientCategoryItem {
+  font-size: var(--font-size-default);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+  padding: 5px;
+}
+
+.clientCategoryItemAction {
+  margin-top: 49px;
+}
+
+@media screen and (max-width: 992px) {
+  .clientTitle {
+    font-size: var(--font-size-big-default);
+  }
+
+  .clientSubTitle {
+    font-size: var(--font-size-big-small);
+    font-weight: 300;
+  }
+
+  .clientCategoryTitle {
+    font-size: var(--font-size-big-small);
+  }
+
+  .clientCategoryItemContainer {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .clientCategoryItemCard {
+    width: 100%;
+    height: 250px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0 rgba(78, 123, 181, 0.1);
+    background-color: var(--white);
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .clientCategoryItemWrapper {
+    padding-top: 17px;
+  }
+
+  .clientCategoryItemAction {
+    margin-top: 31px;
+    width: 140px !important;
+    height: 36px !important;
+  }
+
+  .clientCategoryItemActionIcon {
+    width: 16px !important;
+    height: 20px !important;
+  }
+
+  .clientCategoryItemActionName {
+    font-size: 17px !important;
+  }
+
+  .jarvisConnectorIntro {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .jarvisConnectorIntroItem {
+    margin-bottom: 30px;
+  }
+
+  .jarvisConnectorDownload {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .downloadItem:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .downloadItemAction {
+    width: 140px !important;
+    height: 36px !important;
+  }
+
+  .downloadItemActionIcon {
+    width: 17px !important;
+    height: 20px !important;
+  }
+
+  .downloadItemActionName {
+    font-size: 17px !important;
+  }
+
+  .jarvisConnectorEnv {
+    font-size: var(--font-size-default);
+  }
+}

@@ -1,0 +1,44 @@
+.serviceContainer {
+  visibility: hidden;
+  margin-top: 80px;
+  height: 564px;
+  background-image: linear-gradient(to left, #fafcfd, #f2f7fa);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceTitle {
+  font-size: var(--font-size-big-default);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.serviceCardContainer {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  width: var(--containerWidth);
+}
+
+@media screen and (max-width: 992px) {
+  .serviceContainer {
+    margin-top: 40px;
+    padding: 40px 0;
+    height: auto;
+  }
+
+  .serviceTitle {
+    font-size: var(--font-size-mobile-big);
+  }
+
+  .serviceCardContainer {
+    flex-direction: column;
+    margin-top: 34px;
+  }
+}

@@ -1,0 +1,43 @@
+.sceneDescriptionItemContainer {
+  position: relative;
+  margin: 12px 0;
+  display: flex;
+}
+
+.sceneDescriptionItemIcon {
+  position: absolute;
+  top: 5px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--carolina-blue);
+}
+
+.sceneDescriptionItemText {
+  flex: 1;
+  margin-left: 15px;
+  font-size: var(--font-size-default);
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+@media screen and (max-width: 992px) {
+  .sceneDescriptionItemContainer {
+    margin: 5px 0;
+  }
+
+  .sceneDescriptionItemIcon {
+    width: 6px;
+    height: 6px;
+  }
+
+  .sceneDescriptionItemText {
+    font-size: var(--font-size-mobile-small);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}

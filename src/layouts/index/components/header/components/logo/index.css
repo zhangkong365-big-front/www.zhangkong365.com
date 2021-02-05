@@ -1,0 +1,30 @@
+.headerLogoContainer {
+  flex: 1;
+  display: flex;
+  cursor: pointer;
+}
+
+.headerLogo {
+  width: 123px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.headerEnLogo {
+  width: 194px;
+  height: 40px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 992px) {
+  .headerLogo {
+    width: 83px;
+    height: 30px;
+  }
+
+  .headerEnLogo {
+    width: 135px;
+    height: 28px;
+    object-fit: contain;
+  }
+}

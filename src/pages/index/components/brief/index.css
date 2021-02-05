@@ -1,0 +1,93 @@
+.briefContainer {
+  visibility: hidden;
+  height: 324px;
+  background-image: linear-gradient(to left, #fafcfd, #f2f7fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.briefWrapper {
+  display: flex;
+  width: var(--containerWidth);
+}
+
+.briefItemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.briefIcon {
+  width: 134px;
+  height: 101px;
+}
+
+.briefTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.briefLargeText {
+  margin-top: 26px;
+  font-size: var(--font-size-big-small);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.briefText {
+  margin-top: 12px;
+  font-size: var(--font-size-default);
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+@media screen and (max-width: 992px) {
+  .briefContainer {
+    height: 480px;
+    margin-top: 40px;
+  }
+
+  .briefWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .briefItemContainer {
+    width: 315px;
+    flex-direction: row;
+    margin: 27px 0;
+  }
+
+  .briefIcon {
+    width: 108px;
+    height: 81px;
+  }
+
+  .briefTextContainer {
+    align-items: flex-start;
+    margin-left: 25px;
+  }
+
+  .briefLargeText {
+    font-size: var(--font-size-mobile-default-large);
+    margin-top: 0;
+  }
+
+  .briefText {
+    font-size: var(--font-size-mobile-small-large);
+    line-height: 1.54;
+  }
+}

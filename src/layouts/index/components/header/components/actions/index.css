@@ -1,0 +1,78 @@
+.headerActionsContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.headerActionsA {
+  margin: 0 16px;
+  font-size: var(--font-size-default);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+.headerActionsAActive {
+  font-weight: 500;
+  color: var(--dark-sky-blue);
+}
+
+.headerSmallActionsA {
+  padding: 19px 0;
+  font-size: var(--font-size-mobile-large);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+}
+
+.headerSmallActionsAActive {
+  font-weight: 500;
+  color: var(--dark-sky-blue);
+}
+
+.headerActionIcon {
+  display: none;
+  width: 20px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.headerActionsSmallContainer {
+  display: none;
+  position: fixed;
+  top: var(--headerHeight);
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: var(--white);
+  justify-content: center;
+}
+
+.headerActionsSmallContainerFlex {
+  display: flex;
+}
+
+.headerActionsSmallWrapper {
+  width: var(--containerWidth);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 992px) {
+  .headerActionsA {
+    display: none;
+  }
+
+  .headerActionIcon {
+    display: block;
+  }
+}

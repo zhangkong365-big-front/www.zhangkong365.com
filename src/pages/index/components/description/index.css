@@ -1,0 +1,146 @@
+.descriptionContainer {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriptionWrapper {
+  visibility: hidden;
+  display: flex;
+  width: var(--containerWidth);
+  margin-top: 60px;
+}
+
+.descriptionTextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionText {
+  font-size: var(--font-size-big-default);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.descriptionDetailContainer {
+  margin-top: 35px;
+}
+
+.descriptionImgContainer {
+  flex: 1;
+}
+
+.descriptionBgContainer1 {
+  width: 564px;
+  height: 400px;
+}
+
+.descriptionBgContainer2 {
+  width: 564px;
+  height: 400px;
+}
+
+.descriptionBgContainer3 {
+  width: 564px;
+  height: 400px;
+}
+
+.descriptionBgContainer4 {
+  width: 564px;
+  height: 400px;
+}
+
+.descriptionBgContainer5 {
+  width: 564px;
+  height: 400px;
+}
+
+.descriptionSmallWrapper {
+  visibility: hidden;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriptionSmallText {
+  margin: 20px;
+  font-size: var(--font-size-mobile-big);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.descriptionSmallBgContainer1 {
+  width: 245px;
+  height: 166px;
+}
+
+.descriptionSmallBgContainer2 {
+  width: 226px;
+  height: 177px;
+}
+
+.descriptionSmallBgContainer3 {
+  width: 245px;
+  height: 175px;
+}
+
+.descriptionSmallBgContainer4 {
+  width: 245px;
+  height: 180px;
+}
+
+.descriptionSmallBgContainer5 {
+  width: 245px;
+  height: 234px;
+}
+
+.descriptionSmallDetailContainer1 {
+  margin-top: 10px;
+  width: 245px;
+}
+
+.descriptionSmallDetailContainer2 {
+  margin-top: 10px;
+  width: 245px;
+}
+
+.descriptionSmallDetailContainer3 {
+  margin-top: 10px;
+  width: 270px;
+}
+
+.descriptionSmallDetailContainer4 {
+  margin-top: 10px;
+  width: 245px;
+}
+
+.descriptionSmallDetailContainer5 {
+  margin-top: 10px;
+  width: 245px;
+}
+
+@media screen and (max-width: 992px) {
+  .descriptionContainer {
+    margin-top: 60px;
+  }
+
+  .descriptionWrapper {
+    display: none;
+  }
+
+  .descriptionSmallWrapper {
+    display: flex;
+  }
+}

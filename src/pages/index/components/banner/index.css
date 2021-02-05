@@ -1,0 +1,138 @@
+.bannerContainer {
+  visibility: hidden;
+  height: 600px;
+  background: image-set(
+    url('./assets/bg-top.png') 1x,
+    url('./assets/bg-top@2x.jpg') 2x,
+    url('./assets/bg-top@3x.jpg') 3x
+  ) no-repeat center 0;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerWrapper {
+  width: var(--containerWidth);
+  display: flex;
+}
+
+.bannerTextContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bannerTextWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.bannerTextTop {
+  font-size: var(--font-size-big-large);
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: var(--black);
+}
+
+.bannerTextMiddle {
+  margin-top: 2px;
+  font-size: var(--font-size-big-small);
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.3px;
+  color: var(--black);
+}
+
+.bannerLine {
+  margin-top: 18px;
+  width: 52px;
+  height: 6px;
+  background-image: linear-gradient(to left, #49c689 100%, #23b6bc 48%, #2db7e5 -5%);
+}
+
+.bannerTextBottom {
+  width: 390px;
+  margin-top: 40px;
+  font-size: var(--font-size-large);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+.bannerBg {
+  display: block;
+  width: 561px;
+  height: 400px;
+}
+
+.mobileBannerBg {
+  display: none;
+  margin-top: 53px;
+  width: 281px;
+  height: 156px;
+}
+
+@media screen and (max-width: 992px) {
+  .bannerContainer {
+    visibility: hidden;
+    height: 530px;
+    background: image-set(
+      url('./assets/mobile/bg-top.png') 1x,
+      url('./assets/mobile/bg-top@2x.png') 2x,
+      url('./assets/mobile/bg-top@3x.png') 3x
+    ) no-repeat center 0;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bannerWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bannerTextContainer {
+    text-align: center;
+  }
+
+  .bannerTextWrapper {
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bannerTextTop {
+    font-size: var(--font-size-mobile-big-large);
+  }
+
+  .bannerLine {
+    margin-top: 15px;
+    width: 40px;
+    height: 4px;
+  }
+
+  .bannerTextBottom {
+    width: 310px;
+    margin-top: 22px;
+    font-size: var(--font-size-mobile-large);
+  }
+
+  .bannerBg {
+    display: none;
+  }
+
+  .mobileBannerBg {
+    display: block;
+  }
+}

@@ -1,0 +1,40 @@
+.descriptionItemContainer {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+.descriptionItemIcon {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--carolina-blue);
+}
+
+.descriptionItemText {
+  flex: 1;
+  margin-left: 18px;
+  font-size: var(--font-size-large);
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+@media screen and (max-width: 992px) {
+  .descriptionItemContainer {
+    margin: 0;
+  }
+
+  .descriptionItemIcon {
+    width: 6px;
+    height: 6px;
+  }
+
+  .descriptionItemText {
+    font-size: var(--font-size-mobile-small-large);
+    line-height: 1.85;
+  }
+}

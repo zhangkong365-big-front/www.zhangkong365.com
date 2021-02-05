@@ -1,0 +1,20 @@
+.dashboardButtonContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+}
+
+.ml1 {
+  margin-left: 8px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .headerConsoleContainer {
+    margin-right: 20px;
+  }
+}

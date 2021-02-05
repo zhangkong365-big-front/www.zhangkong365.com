@@ -1,0 +1,76 @@
+.evaluateItemContainer {
+  display: flex;
+  flex-direction: column;
+  height: 216px;
+  box-shadow: 0 0 10px 0 rgba(78, 123, 181, 0.1);
+  background-color: var(--white);
+  margin: 0 12px;
+  padding: 30px;
+}
+
+.evaluateItemIcon {
+  width: 28px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.evaluateItemContent {
+  margin-top: 10px;
+  font-size: var(--font-size-default);
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+.evaluateItemBottomContainer {
+  margin-top: 20px;
+  display: flex;
+}
+
+.evaluateItemCompany {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  font-size: var(--font-size-big-small);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.evaluateItemCompanyIcon {
+  width: 144px;
+  height: 47px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 992px) {
+  .evaluateItemContainer {
+    height: auto;
+  }
+
+  .evaluateItemIcon {
+    width: 18px;
+    height: 16px;
+  }
+
+  .evaluateItemContent {
+    font-size: var(--font-size-mobile-small);
+    font-weight: 300;
+    line-height: 1.83;
+  }
+
+  .evaluateItemCompany {
+    font-size: var(--font-size-mobile-default);
+  }
+
+  .evaluateItemCompanyIcon {
+    width: 81px;
+    height: 26px;
+  }
+}
