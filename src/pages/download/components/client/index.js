@@ -4,15 +4,15 @@ import DownloadButton from '../button/index';
 import img from '../../assets/img';
 
 function downloadWindows() {
-  window.open('https://zhangkongclient.oss-cn-shanghai.aliyuncs.com/%E6%8E%8C%E6%8E%A7%E5%90%8C%E6%AD%A5%E5%8A%A9%E6%89%8B%20Setup%201.0.8.exe');
+  window.open('https://zhangkongclient.oss-cn-shanghai.aliyuncs.com/%E6%8E%8C%E6%8E%A7%E5%90%8C%E6%AD%A5%E5%8A%A9%E6%89%8B%20Setup%201.0.9.exe');
 }
 
 function downloadWindowsx86() {
-  window.open('https://zhangkongclient.oss-cn-shanghai.aliyuncs.com/%E6%8E%8C%E6%8E%A7%E5%90%8C%E6%AD%A5%E5%8A%A9%E6%89%8B%20Setup%201.0.8%20x86.exe');
+  window.open('https://zhangkongclient.oss-cn-shanghai.aliyuncs.com/%E6%8E%8C%E6%8E%A7%E5%90%8C%E6%AD%A5%E5%8A%A9%E6%89%8B%20Setup%201.0.9%20x86.exe');
 }
 
 function downloadMac() {
-  window.open('https://zhangkongclient.oss-cn-shanghai.aliyuncs.com/%E6%8E%8C%E6%8E%A7%E5%90%8C%E6%AD%A5%E5%8A%A9%E6%89%8B-1.0.8.pkg');
+  window.open('https://zhangkongclient.oss-cn-shanghai.aliyuncs.com/%E6%8E%8C%E6%8E%A7%E5%90%8C%E6%AD%A5%E5%8A%A9%E6%89%8B-1.0.9.pkg');
 }
 
 function downloadIos() {
