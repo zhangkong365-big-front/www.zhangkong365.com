@@ -20,7 +20,7 @@ function downloadIos() {
 }
 
 function downloadAndroid() {
-  window.open('https://zhangkongclient.oss-cn-shanghai.aliyuncs.com/thingworks_v2.5.9.apk');
+  window.open('https://zhangkongclient.oss-cn-shanghai.aliyuncs.com/thingworks_v3.0.0.apk');
 }
 
 function downloadAndroidOld() {
